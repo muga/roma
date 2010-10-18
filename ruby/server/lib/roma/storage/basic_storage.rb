@@ -8,7 +8,7 @@ module Roma
       attr :hdb
       attr :hdiv
       attr :ext_name
-      
+
       attr_reader :error_message
 
       attr_writer :vn_list
@@ -90,7 +90,6 @@ module Roma
         buf = @hdb; @hdb = []
         buf.each{ |hdb| close_db(hdb) }
       end
-
 
       # [ 0.. 3] vn
       # [ 4.. 7] physical clock (unix time)
